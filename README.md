@@ -2,96 +2,64 @@
 
 
 
-# [Project Name] 🎯
+# Type Speed Punisher 🎯
 
 
-## Basic Details
-### Team Name: [Name]
+### Team Member
+- Team Lead: Hridya M K - College of Engineering Trikaripur
 
-
-### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
 
 ### Project Description
-[2-3 lines about what your project does]
+This is a type speed recognition and if the speed is high it 
+ give the punishment according to the speed level in WPM.
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+The problem is typing speed of most of the person is high.
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+Reduce the type speed.
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- Languages used: html, css, javascript, python
+- Frameworks used: none
+- Libraries used: Web Audio API, Google Fonts
+- Tools used: Visual Studio Code, Google Chrome, Git/GitHub
 
-For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
-
-### Implementation
-For Software:
-# Installation
-[commands]
 
 # Run
-[commands]
+open index.html
 
 ### Project Documentation
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot1](img1.png)
+typing-speed-punisher-dashboard
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot2](img3.png)
+typing-speed-violation
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot3](img5.png)
+level-5-maniac-lockdown
 
-# Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
 
-For Hardware:
-
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
-
-# Build Photos
-![Components](Add photo of your components here)
-*List out all components shown*
-
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
 
 ### Project Demo
 # Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
+Typing Speed Punisher - Speed Limit Police 🚓 - Google Chrome 
 
-# Additional Demos
-[Add any extra demo materials/links]
+The video demonstrates the complete working of the Typing Speed Punisher
+web application. It shows real-time WPM monitoring, punishment levels 
+triggered by increasing typing speed, visual and sound effects, and the
+Level 5 “Maximum Chaos” mode with typing lockdown and CAPTCHA.
+
+
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- Hridya M K: Complete project building
+
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 

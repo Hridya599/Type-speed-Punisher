@@ -35,19 +35,20 @@ open index.html
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](img1.png)
+![](img1.png)
 typing-speed-punisher-dashboard
 
-![Screenshot2](img3.png)
+![](img3.png)
 typing-speed-violation
 
-![Screenshot3](img5.png)
+![](img5.png)
 level-5-maniac-lockdown
 
 
 
 ### Project Demo
 # Video
+
 Typing Speed Punisher - Speed Limit Police 🚓 - Google Chrome 
 
 The video demonstrates the complete working of the Typing Speed Punisher

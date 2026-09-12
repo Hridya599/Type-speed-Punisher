@@ -1,1 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Punisher - Speed Limit Police 🚓</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&family=Orbitron:wght@600;800;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Screen Flash Overlay -->
+    <div id="flash-overlay"></div>
 
+    <!-- Police Lightbar Background Animation -->
+    <div class="siren-bar">
+        <div class="siren red"></div>
+        <div class="siren blue"></div>
+    </div>
+
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <div class="badge">🚓 TSPD 🚓</div>
+            <h1>TYPING SPEED POLICE</h1>
+            <p class="subtitle">ENFORCING A MANDATORY 30 WPM SPEED LIMIT</p>
+        </header>
+
+        <!-- Live Status Bar -->
+        <div class="status-bar" id="status-bar">
+            <span class="status-icon" id="status-icon">🟢</span>
+            <span id="status">You're safe 🟢</span>
+        </div>
+
+        <!-- 7-Metric Live Dashboard -->
+        <div class="stats">
+            <div class="stat-card">
+                <h2 id="wpm">0</h2>
+                <p>Current WPM</p>
+            </div>
+
+            <div class="stat-card">
+                <h2 id="acceleration">0</h2>
+                <p>Acceleration</p>
+            </div>
+
+            <div class="stat-card" id="card-level">
+                <h2 id="punishment-level">L0</h2>
+                <p>Punishment Level</p>
+            </div>
+
+            <div class="stat-card">
+                <h2 id="punishments">0</h2>
+                <p>Punishments</p>
+            </div>
+
+            <div class="stat-card">
+                <h2 id="char-count">0</h2>
+                <p>Characters Typed</p>
+            </div>
+
+            <div class="stat-card">
+                <h2 id="time-spent">00:00</h2>
+                <p>Time Spent</p>
+            </div>
+
+            <div class="stat-card">
+                <h2 id="max-wpm">0</h2>
+                <p>Max WPM</p>
+            </div>
+        </div>
+
+        <!-- Practice Note / Target Text to Type -->
+        <div class="note-card">
+            <div class="note-header">
+                <span>📋 PRACTICE NOTE (TYPE THIS TEXT BELOW):</span>
+                <button id="btn-next-note" class="btn-sm">🎲 Change Note</button>
+            </div>
+            <div id="practice-note" class="practice-note-text">
+                The quick brown fox jumps over the lazy dog. Typing with steady rhythm is an art form. Do not rush your fingers or exceed thirty words per minute, or the typing speed police department will issue a fine.
+            </div>
+        </div>
+
+        <!-- Interactive Typing Arena -->
+        <div class="typing-container">
+            <textarea
+                id="typingBox"
+                placeholder="Start typing the note here... (Keep your speed below 30 WPM!)"
+                spellcheck="false"
+            ></textarea>
+        </div>
+
+        <!-- Dynamic Punishment Output Message Box -->
+        <div id="punishment">Keep your typing slow and steady.</div>
+
+        <!-- Action Controls -->
+        <div class="actions">
+            <button id="btn-sound" class="btn btn-audio">🔊 Sound: ON</button>
+            <button id="btn-reset" class="btn btn-reset">🔄 Reset Stats</button>
+        </div>
+    </div>
+
+    <!-- LEVEL 4 POPUP MODAL -->
+    <div id="modal-level4" class="modal-overlay hidden">
+        <div class="modal-card modal-warning">
+            <div class="modal-header">
+                <h2>🚨 LEVEL 4 SPEED VIOLATION 🚨</h2>
+            </div>
+            <div class="modal-body">
+                <p id="level4-msg">WARNING: RECKLESS KEYBOARD DRIVING DETECTED!</p>
+                <div class="popup-subtext">Speeding ticket issued! Reduce WPM immediately!</div>
+            </div>
+            <div class="modal-footer">
+                <button id="btn-close-level4" class="btn btn-primary">I Apologize, Officer</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- LEVEL 5 MAXIMUM CHAOS MODAL (MANIAC CAPTCHA) -->
+    <div id="modal-level5" class="modal-overlay hidden">
+        <div class="modal-card modal-danger">
+            <div class="modal-header">
+                <h2>🔥 LEVEL 5: MAXIMUM CHAOS 🔥</h2>
+            </div>
+            <div class="modal-body">
+                <p class="maniac-alert">YOU ARE TYPING LIKE AN ABSOLUTE MANIAC!</p>
+                <p class="captcha-instruction">To unlock your keyboard, type this pledge exactly:</p>
+                <div class="captcha-target">"I WILL NOT TYPE LIKE A MANIAC"</div>
+                <input type="text" id="captcha-input" placeholder="Type sentence exactly here..." autocomplete="off" />
+                <p id="captcha-feedback" class="feedback-text"></p>
+            </div>
+            <div class="modal-footer">
+                <button id="btn-submit-captcha" class="btn btn-danger" disabled>Unlock Keyboard</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
